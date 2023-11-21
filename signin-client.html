@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="asset/styles/styles.css" type="text/css" rel="stylesheet">
     <title>TIMSAN TALENTHUB</title>
@@ -29,27 +29,27 @@
             </div>
         </div>
         <div class="signup-frame2" id="signup-frame2">
-                <h1 class="sf-head">Sign up</h1><hr style="background-color:rgba(0, 0, 0, 0.5); margin:20px 0px; border: 1px solid;">
+            <form action="" style="max-width:500px;">  
+                <h1 class="sf-head">Sign in</h1><hr style="background-color:rgba(0, 0, 0, 0.5); margin:20px 0px; margin-right:-35px; border: 1px solid;">
                  <ul class="sm-link">
                     <li><img src="./asset/images/facebook.svg"  alt=""> </li>
                     <li><img src="./asset/images/flat-color-icons_google.svg"  alt=""></li>
                     <li><img src="./asset/images/linkedin.svg"  alt=""></li>
                  </ul>
                 <p class="hr-lines"> or </p>
-                <form action="" style="max-width:500px;">     
-                <div class="input-icons">
+                   
+                    <div class="input-icons">
                         <i class="fa fa-at icon"> </i>
-                        <input class="input-field"  name="email"  type="text" placeholder="Email" required/>
+                        <input  class="input-field" type="text" name="emailphone" id="emailphone" placeholder="Enter Email Adress Or Phone number"  required pattern="/^(?:\d{10}|\w+@\w+\.\w{2,3})$/"/>
                     </div>
          
                     <div class="input-icons">
                         <i class="fa fa-lock icon"> </i>
-                        <input class="input-field"  name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password"  placeholder="Password" required/>
+                        <input class="input-field"  name="psw"  type="password"  placeholder="Password" required/>
                     </div>
+                
 
-                </form>
-
-                <p class="f-pass"><a href="" class="f-pass1">Forgot Password</a></p>
+                <p class="f-pass"><a href="forgetpassword.html" class="f-pass1">Forgot Password</a></p>
 
             <div class="suf1-btn">
             <button type="submit" class="su-btn" href="">Proceed</button>
@@ -59,6 +59,7 @@
                     <li> Don't have an Account? <a class="fsign" href="signup.html">Sign up</a></li>
                 </ul>
             </div>
+        </form>
         </div> 
     </div>  
     </section>

@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-@font-face {
-  font-family: 'Droid Sans Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Droid Sans Regular'), url('./asset/DroidSans.woff') format('woff');
-  }
-  
+ 
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +10,18 @@
     font-size: 18px;
     font-weight: 400;
     font-family: 'Poppins';
+  }
+  p, .msg-title, .cus-btn{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h3{
+    font-size: 32px;
+    font-weight:600;
+    margin-bottom: 10px;
+  }
+  article{
+    margin-bottom: 30px;
   }
   section{
     padding-left: 30px;
@@ -66,7 +71,67 @@ nav {
   color:white;
   display: flex;
   justify-content: center;
+
+  /* RESET/ FORGOT/ CHANGE PASSWORD BEGING */
   }
+  .pwd-reset, .pwd-img{
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 1);
+  }
+  .pwd-img>img{
+    width: 100px;
+    height: 100px;
+  }
+  .reset-header{
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+margin-top: 50px;
+margin-left: 10px;
+  }
+
+  .reset-head{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  .rst-form{
+    margin-top: 100px;
+
+  }
+  .reset-box{
+    width: 530px;
+    height: 50px;
+     background-color: white;
+     color: black;
+     border: 2px solid rgba(217, 217, 217, 1);
+     border-radius: 30px;
+     font-size: 24px;
+     font-weight: 400;
+     padding-left: 20px;
+  }
+
+  .rst-margin{
+    margin-bottom: 20px;
+  }
+  .rst-btn{
+    width: 550px;
+    height: 70px;
+     background-color: rgba(34, 139, 34, 0.88);
+     color: white;
+     border: none;
+     border-radius: 30px;
+     font-size: 24px;
+     font-weight: 400;
+     margin-bottom: 40px;
+   }
+   /* RESET/ FORGOT/ CHANGE PASSWORD END */
+
   .writer-intro{
     margin-top: 30px;
     padding-bottom: 70px;
@@ -87,6 +152,7 @@ nav {
     font-weight: 500;
     margin: 20px 0px;
   }
+  
   ul{
     display: flex;
     align-items: center;
@@ -167,7 +233,10 @@ nav {
     width: 100%;
     padding: 10px;
     padding-left: 30px;
+    background-color: rgba(236, 236, 236, 1);
+    border: none;
 }
+
 
 /* sign up end */
 
@@ -254,6 +323,9 @@ nav {
     background-color: black;
     color: white;
    }
+   input:focus-visible, textarea:focus-visible {
+    outline: none
+}
   .category-heading{
     font-family: 'Poppins';
     font-size: 20px;
@@ -355,6 +427,16 @@ nav {
     width: 60px;
     height: 60px;
   }
+.t-head{
+font-size: 64px;
+font-weight: 600;
+background-color: rgba(10, 164, 25, 0.75);
+color: rgba(255, 255, 255, 1);
+display: flex;
+justify-content: center;
+height: 150px;
+padding-top: 50px;
+}
 
 
   a,li,ul{
@@ -368,7 +450,7 @@ ul:hover, a:hover, button:hover, li:hover{
 footer{
     background-color: black;
     color: white;
-    font-family: 'Droid Sans Regular';
+    font-family: 'poppins';
 }
 
 .footer{
@@ -384,7 +466,7 @@ footer{
 .footer-list{
     color: rgba(215, 191, 41, 1);
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: 400;
 }
@@ -430,7 +512,7 @@ footer{
      padding-bottom: 10px;
      padding-left: 50px;
      color: white;
-     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
  }
  .signup-pg1{
   background-color: rgba(217, 217, 217, 0.4);
@@ -449,10 +531,9 @@ footer{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
+  margin-right: -30px;
   margin-top: -10px;
-  margin-right: 10px;
  }
  .f-pass1{
   color: rgba(255, 84, 62, 1);
@@ -463,6 +544,7 @@ footer{
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
+
  }
  .signup-bg{
   padding-left: 10px;
@@ -519,6 +601,7 @@ footer{
   color: rgba(34, 139, 34, 0.88);
   font-size: 36px;
   font-weight: 500;
+  margin-right: -35px;
  }
  .su-box{
   width: 220px;
@@ -568,7 +651,7 @@ footer{
   justify-content: space-between;
   font-size: 20px;
   font-weight: 400;
-  margin-right: 5px;
+  margin-right: -35px;
  }
  /* otp section begins */
  .ver-container { 
@@ -589,6 +672,11 @@ footer{
   cursor: not-allowed; 
   pointer-events: none; 
 } 
+.input-field:active, .input-field:hover, .reset-box:hover{
+  background-color: rgba(34, 139, 34, 0.4);
+  outline: none;
+  border: none;
+}
 
 .input:focus { 
   border-bottom: 3px solid rgba(0, 0, 0, 0.5); 
@@ -612,6 +700,15 @@ footer{
  }
 
  .hr-lines{
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: -35px;
+}
+.hr-lines1{
   position: relative;
   max-width: 600px;
   margin: 30px auto;
@@ -642,7 +739,55 @@ footer{
   right: 0;
 }
   /* sign up page  end*/
-
+  .tos-head{
+    color: rgba(10, 164, 25, 0.75);
+  }
+  .service-article{
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+  .p-art, .lines{
+    margin-bottom: 20px;
+  }
+  b{
+    padding-left: 10px;
+    color: rgba(215, 191, 41, 1);
+  }
+  .msg-box{
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 1);
+    border: none;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #textarea{
+    padding-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 1);
+    border: none;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 500px;
+    width: 1100px;
+    border: none;
+    padding-top: 5px;
+  }
+  
+  .cus-btn{
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(10, 164, 25, 0.75);
+    color: white;
+  }
+  .c-head{
+    font-size: 48px;
+    font-weight: 500;
+  }
 
   @media (min-width: 800px) {
     .hamburger {
@@ -678,8 +823,6 @@ footer{
    .client-btn{
     margin: 40px;
    }
-
-
    footer{
     display: flex;
     justify-content: center;
@@ -733,7 +876,7 @@ footer{
     .art-header{
       height: auto;
     }
-    hr{
-      margin-bottom: 50px;
+    .msg-box, #textarea{
+      width: 400px;
     }
     }
