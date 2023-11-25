@@ -1,3 +1,4 @@
+
 // otp verification script
 const inputs = document.getElementById("inputs"); 
   
@@ -31,5 +32,3 @@ inputs.addEventListener("keyup", function (e) {
         return; 
     } 
 });
-
-// otp verification end

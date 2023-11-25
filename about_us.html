@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="asset/styles/styles.css" type="text/css" rel="stylesheet">
+    <title>TIMSAN TALENTHUB</title>
+</head>
+<body  class="about-body">
+<div class="abt-header">
+    <h1 class="abt-heading">About Us</h1>
+</div>
+
+<div class="abt-list">
+    <ul class="abt-mission"> 
+        <button class="tablink" onclick="openPage('Mission', this, 'lightgreen')" id="defaultOpen">Our Mission & Vision</button>
+        <button class="tablink" onclick="openPage('Commitment', this, 'lightgreen')">Our Commitment</button>
+        <button class="tablink" onclick="openPage('What', this, 'lightgreen')">What Sets Us Apart</button>
+    </ul>
+</div>
+<div id="Mission" class="tabcontent">
+<div class="">
+    <h3 class="abt-head">Our Mission</h3>
+    <p class="abt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor</p>
+    
+    <h3 class="abt-head">Our vision</h3>
+    <p class="abt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+        commodo consequat. Duis aute irure dolor</p>
+</div>
+</div>
+
+
+<div id="Commitment" class="tabcontent">
+    <div class="">
+        <h3 class="abt-head">Our Commitment</h3>
+        <p class="abt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+            commodo consequat. Duis aute irure dolor</p>
+    </div>
+    </div>
+    <div id="What" class="tabcontent">
+        <div>
+            <h3 class="abt-head">What Sets Us Apart</h3>
+            <div>
+            <p class="set-subhead"> <strong class="para-head">Diverse Talent Pool:</strong><span> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </span></p>
+            <p class="set-subhead"> <strong class="para-head">Transparent and Fair:</strong><span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </span></p> 
+            <p class="set-subhead"> <strong class="para-head">User-Focused Experience:</strong> <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </span></p> 
+            <p class="set-subhead"> <strong class="para-head">Safety and Security:</strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </span></p> 
+        </div>
+     </div>
+
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer__company">
+                <img src="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg" alt=""><br>
+                    <ul class="block">
+                    <a class="fa fa-instagram"></a>
+                    <a class="fa fa-linkedin"></a>
+                    <a class="fa fa-facebook"></a>
+                    <a class="fa fa-twitter"></a>
+                    </ul>
+            </div>
+    
+            <div class="footer__nav" id="footer-nav">
+                <p class="footer-list">Navigate</p>
+                <ul class="block">
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <li class="link"><a href="">Post a Job</a></li>
+                    <li class="link"><a href="">Find a Freelancer</a></li>
+                    <li class="link"><a href="">Find a Job</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav" id="footer-nav">
+                <p class="footer-list">Information</p>
+                <ul class="block">
+                    <li class="link"><a href="about_us.html">About us</a></li>
+                    <li class="link"><a href="#UniqueIdentifier">How it works</a></li>
+            </div>
+            
+            <div class="footer__nav">
+                <p class="footer-list">Resources</p>
+                <ul class="block">
+                    <li class="link"><a href="faq.html">Helps & FAQ</a></li>
+                    <li class="link"><a href="blog.html">Blogs</a></li>
+                    <li class="link"><a href="contact-us.html">contact Us</a></li>
+                    <li class="link"><a href="">Site map</a></li>
+                    <li class="link"><a href="">cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__nav">
+                <p class="footer-list">Policies</p>
+                <ul class="block">
+                    <li class="link"><a href="privacy.html">privacy settings</a></li>
+                    <li class="link"><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;background-color:rgba(156, 201, 135, 1); margin-bottom: 50px;"> <br>
+    </footer>
+
+
+    <script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+ elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
