@@ -7,31 +7,77 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="asset/styles/styles.css" type="text/css" rel="stylesheet">
-    <title>TIMSAN TALENTHUB</title>
+    <title>SETTINGS</title>
 </head>
 <body>
-    <section>
-        <div class="sett-body">
-        <div class="setting-link">
-            <h1>Settings</h1>
-            <p>My info</p>
-            <p>Password & Security</p>
-            <p>Notification Settings</p>
+    <div>
+        <nav>
+        <div class="nav-logo">
+            <a  class="hd-img"  href="index.html"><img src="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg"></a>
+            <ul>
+                <li class="dropdown">Find work<i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
+                    <a href="#">Find Work</a>
+                    <a href="savedjob.html">Saved job</a>
+                    <a href="profile.html">Profile</a>
+                  </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="dropdown">My Jobs<i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
+                    <a href="myjob.html">My Jobs</a>
+                    <a href=""></a>
+                  </div>
+                </li>
+            </ul>
         </div>
+                <ul class="nav-list">
+                  <a class="nav-search">
+                    <input class="head_search" type="text" placeholder="Search for talents/Freelancers"><i class="headsearch-img"><img src="./asset/images/Group 2203.svg"/></i></a>
+                    <li class="headicon">
+                    <a  class="head-icon" href="message.html"><img src="./asset/images/mdi_message-badge-outline.svg"> </a>
+                    <a  class="head-icon" href="notification.html"><img src="./asset/images/basil_notification-on-outline.svg"> </a>
+                    <a class="head-icon"><img src="./asset/images/iconamoon_profile-circle-fill.svg"></a>
+                     <ii class="dropdown">Imoleade
+                    <div class="dropdown-content1">
+                    <a  class="drophead">
+                      <img src="./asset/images/Ellipse 58.svg">
+                       <h3 class="fsign">Muhammed Nazir</h3>
+                       <p>Freelancer</p></a>
+                    <a href="free-settings.html"><i><img src="./asset/images/sett.svg"> </i>Settings</a>
+                    <a href="signin-client.html"><i> <img src="./asset/images/logout.svg"></i>Logout</a>
+                    </div></li>
+                </li>
+                </ul>
 
+                <!-- Hamburger -->
+              <div class="hamburger">
+                <img src="./asset/images/icon-hamburger.svg" alt="" />
+              </div>
+        </nav>
+    </div> 
+    <div class="sett-body">
+        <div class="tab">
+            <h1>Settings</h1>
+            <button class="tablinks" onclick="openPage('info', this, '#0AA419BF')" id="defaultOpen">My info</button>
+            <button class="tablinks" onclick="openPage('security', this, '#0AA419BF')">Password & Security</button>
+            <button class="tablinks" onclick="openPage('Notification', this, '#0AA419BF')">Notification Settings</button>
+        </div>
         <div class="">
-            <h1>My Info</h1>
+        <div class="tabcontent1" id="info">
+            <h3 class="f_sign">My Info</h3>
             <p>This is a client account</p>
-        <div class="">
-        <p>Account</p>
+        <div class="sett-frame">
+        <div class="acct-spacing">
+        <p class="act-h">Account</p>
         <span class="icon-img"><img src="./asset/images/mdi_edit-circle-outline.svg"> </span>
         </div>
-        <div>
-
+        <div class="acct-box">
             <div class="acct-img">
                 <img src="./asset/images/Group 2198.svg" alt=""/>
             </div>
-            <div>
+            <div class="acct-para">
             <p>K****1kptgy</p>
             <p>Client</p>
             <p>K****1kptgyhhkgvbgv</p>
@@ -40,8 +86,54 @@
             </div>
         </div>
         </div>
+        
+        <div class="acct-btn">
+            <button type="submit" class="close-btn"> Close account</button>
         </div>
-    </section>
+        </div>
+
+        <div class="tabcontent1" id="security">
+            <h3 class="f_sign">Password & Security</h3>
+            <a href="changepassword.html">
+            <button type="submit" class="close-btn"> Change Password</button></a>
+        <div class="sett-frame set-body" id="">
+        <div class="acct-spacing">
+        <p class="act-h">Two -step verification options</p>
+        <span class="icon-img"><img src="./asset/images/ion_settings-outline.svg"/> </span>
+        </div>
+        <div class="acct-box">
+            <div class="acct-par">
+            <p class="authen-para">Add and extra layer of security to block unautorize access and protect your account</p>
+            <p class="sec-head">Authenticator app-code <img src="./asset/images/material-symbols_help-outline (1).svg"/>        (Recommended)</p>
+            <p class="authen-para">Add and extra layer of security to block unautorize access and protect your account</p>
+            <hr>
+            <p class="f_sign sec-head">Text-message <img src="./asset/images/material-symbols_help-outline (1).svg"/></p>
+            <p class="authen-para">Add and extra layer of security to block unautorize access and protect your account</p><hr>
+            <p class="f_sign sec-head">Security question <img src="./asset/images/material-symbols_help-outline (1).svg"/></p>
+            <p class="f_sign sec-head">Not enabled</p>
+            <p class="authen-para">Add and extra layer of security to block unautorize access and protect your account</p>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+
+    <div class="tabcontent1" id="Notification">
+            <h3 class="f_sign">Notification Settings</h3>
+        <div class="sett-frame set-body">
+        <div class="acct-box">
+            <div class="acct-par">
+            <p class="sec-head"><a class="f_sign" href="message.html">Messages</a></p>
+            <p class="f_sign sec-head">Desktop</p>
+            <p class="nots-para">Show notifications for:</p>
+            <input class="not-search" type="search" placeholder="ALL ACTIVITY">
+            <p class="nots-para">Increment message counter for:</p>
+            <input class="not-search" type="search" placeholder="ALL ACTIVITY">
+            </div>
+        </div>
+        </div>
+</div>
+</div>
 
     <footer>
         <div class="footer">
@@ -93,6 +185,25 @@
         </div>
         <hr style="height:2px;border-width:0;background-color:rgba(156, 201, 135, 1); margin-bottom: 50px;"> <br>
     </footer>
+
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent1");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.color = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+         elmnt.style.color = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 </body>
 </html>
 
