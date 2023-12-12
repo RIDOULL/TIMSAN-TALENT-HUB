@@ -146,6 +146,10 @@
       color: rgba(34, 139, 34, 0.88);
     }
 
+    .droplink{
+      padding: 0px 30px;
+    }
+
     /* dropdrown */
   header, .abt-list{
     background: rgba(255, 255, 255, 1);
@@ -154,7 +158,7 @@
 
   .head-link, .acct-spacing, .set-spacing, .mes-chat,
    .review-head, .mes-box, .job-rating, .section-cat, .flex-discover,
-   .flex_home {
+   .flex_home, .flex_recent {
     display: flex;
     justify-content: space-between;
   }
@@ -274,7 +278,7 @@ margin-left: 10px;
     margin: 20px 0px;
   }
   
-  ul, .checkbox-frm, .job-head, .nav-logo{
+  ul, .checkbox-frm, .job-head, .nav-logo, .flex_alljob{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -434,7 +438,7 @@ margin-left: 10px;
     margin-top: 200px;
     margin-bottom: 30px;
   }
-  .category-body, .category-body1, .section-header, .Joblist-body, .spt-cont{
+  .category-body, .category-body1, .section-header, .Joblist-body, .spt-cont, .dev-body1{
     display: flex;
     flex-wrap: wrap;
     margin-left: 5px;
@@ -1565,7 +1569,7 @@ float: right;
 background-color: rgba(217, 217, 217, 0.8);
 border-radius: 20px;
 }
-.numb{
+.numb, .design_box1>p>a{
   font-size: 22px;
   font-weight: 500;
   line-height: 36px;
@@ -1573,6 +1577,13 @@ border-radius: 20px;
 .icon-img>a{
   font-size: 16px;
   font-weight: 500;
+}
+.flex_recent>p>a, .design_box1>p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.icon-img>a{
   color: white;
 }
 
@@ -1645,7 +1656,7 @@ line-height: 18px;
 }
 .flex-box{
   float: left;
-  width: 70%;
+  width: 68%;
   height: 100%;
   border-radius: 10px;
 }
@@ -1667,17 +1678,28 @@ line-height: 18px;
   overflow: auto;
   white-space: nowrap;
 }
-
-.dev-body1{
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(224, 224, 224, 1);
-  width: 800px;
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 20px;
+.dev-text{
+  font-size: 24px;
+  font-weight: 500;
 }
-
+.flex_recent{
+  padding: 0px 20px;
+}
+.dev-body1{
+  background-color: rgba(224, 224, 224, 1);
+  width: auto;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.dev-body2{
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(217, 217, 217, 1);
+  width: auto;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding: 20px 0px;
+}
 .dev-body{
   overflow: auto;
   white-space: nowrap;
@@ -1685,7 +1707,46 @@ line-height: 18px;
 .dev-body>div{
   display: inline-block;
   padding: 10px;
+}
+.design_box{
+background-color: rgba(217, 217, 217, 1);
+border: 2px solid rgba(217, 217, 217, 1);
+width: auto;
+border-radius: 10px;
+padding: 10px 50px;
+margin-bottom: 100px;
+}
 
+.tab>p, .flex_alljob>p{
+font-size: 24px;
+font-weight: 500;
+line-height: 20px;
+}
+.tab>p{
+  margin-bottom: 30px;
+}
+.searchField{
+  width: 450px;
+  height: 40px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  color: rgba(10, 164, 25, 0.75) ;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 20px;
+}
+.searchBox{
+  padding: 20px 30px;
+}
+.searchb_img>img{
+  width: 38px;
+  height: 40px;
+  position: absolute;
+  margin-left: -10px;
+}
+
+.flex-box2{
+  margin: 30px 40px 100px 40px;
 }
 
 
@@ -1795,7 +1856,7 @@ line-height: 18px;
       display: flex;
       flex-direction:column;
      }
-     .flex_home, .flex-discover, .dev-body1{
+     .flex_home, .flex-discover, .flex_recent{
       display: flex;
       flex-direction:column;
      }
@@ -1808,8 +1869,10 @@ line-height: 18px;
       line-height: 16px;
     }
 
-    .reset-header, .cus-btn, .span-head, .mbox-text, .flex-discover>p,
-    .faq-heading , .tab>h1, .client-frame>h1, .sec-head, .dolac, .flex_cat>li, .social_rate{
+    .reset-header, .cus-btn, .span-head, .mbox-text, 
+    .flex-discover>p, .dev-text, .tab>p, .flex_alljob>p,
+    .faq-heading , .tab>h1, .client-frame>h1, .sec-head, 
+    .dolac, .flex_cat>li, .social_rate{
       font-size: 18px;
       font-weight: 500;
     }
@@ -1844,7 +1907,8 @@ line-height: 18px;
       padding-bottom: 20px;
     }
     .category-body, .category-body1, .section-header, .chatname,
-    .cate, footer, .spt-cont, .spt-center, .faq-head, .mes-img, .Joblist-body{
+    .cate, footer, .spt-cont, .spt-center, .faq-head, .mes-img, .dev-body1
+     .Joblist-body{
       display: flex;
       justify-content: center;
     }
@@ -1871,11 +1935,11 @@ line-height: 18px;
       line-height: 40px;
     }
     .free-image, .not-search, .review-para, .job-text, 
-    .chome_img, .dev-box1{
+    .chome_img{
       width: auto;
     }
 
-    .free-image>img, .chome_img>img, .clome_para, .dev-body1{
+    .free-image>img, .chome_img>img, .clome_para{
       width: 100%;
     }
     form{
@@ -1888,7 +1952,8 @@ line-height: 18px;
       padding: 10px;
       height: auto;
     }
-    .prof_text1, .hr_line, .mbox-chat>p, .chatname, .icon-img>a{ 
+    .prof_text1, .hr_line, .mbox-chat>p, .chatname, 
+    .icon-img>a, .design_box1>p, .flex_recent>p>a{ 
       font-size: 12px;
     }
     .abt-mission, .abt-para, .client-paragraph, .comment-head, label,
@@ -2059,7 +2124,7 @@ line-height: 18px;
 width: 18px;
 height: 18px;
 }
-.icon-img>img, .icon-img1>img{
+.icon-img>img, .icon-img1>img, .flex_recent>p>a>img{
   width: 14px;
   height: 14px;
   }
@@ -2083,6 +2148,10 @@ height: 18px;
   width: 25px;
   height: 20px;
 }
+.devhead_img>img, .devhead_img1>img{
+  width: 50px;
+  height: 50px;
+}
 
 .imgs1>img{
   width: 70px;
@@ -2092,15 +2161,45 @@ height: 18px;
 padding-top: 0px;
 margin-bottom: -20px;
 }
-.numb{
+.numb, .design_box1>p>a{
   font-size: 16px;
 }
 .messa-text{
-  
   margin-top: 450px;
 }
 .nav-logo ul{
   margin-left: 10px;
 }
 
+.dev-box1{
+  width: 180px;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.dev-box{
+  width: 180px;
+  padding: 5px;}
+
+.dev-body1{
+  width: auto;
+  padding: auto;
+  align-items: center;
+}
+.design_box{
+  padding: 10px 10px;
+  }
+ .btn-signup{
+    font-size: 14px;
+  }
+  .searchField{
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  .searchBox{
+    padding: 20px 10px;
+  }
 }
