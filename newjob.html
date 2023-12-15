@@ -10,7 +10,7 @@
     <title>MY JOB</title>
 </head>
 <body>
-    <div>
+    <div class="navbar" id="overflow">
         <nav>
         <div class="nav-logo">
             <a  class="hd-img"  href="index.html"><img src="./asset/images/TIMSAN_LOGO-removebg-preview 1.svg"></a>
@@ -27,15 +27,15 @@
             <ul>
                 <li class="dropdown">Talents<i class="fa fa-caret-down"></i>
                   <div class="dropdown-content">
-                    <a href="discover.html">Discover</a>
-                    <a href="yourhires.html">Your  hires</a>
-                    <a href="recentlyviewed.html">Recently Viewed</a>
+                    <a href="./discover.html">Discover</a>
+                    <a href="./yourhires.html">Your  hires</a>
+                    <a href="./recentlyviewed.html">Recently Viewed</a>
                     <a href=""></a>
                   </div>
                 </li>
             </ul>
         </div>
-                <ul class="nav-list">
+                <ul class="nav-list"  id="nav_listflex" >
                   <a class="nav-search">
                     <input class="head_search" type="text" placeholder="Search for talents/Freelancers"><i class="headsearch-img"><img src="./asset/images/Group 2203.svg"/></i></a>
                     <li class="headicon">
@@ -60,9 +60,64 @@
               </div>
         </nav>
     </div> 
+<section>   
+<div style="background-color: rgba(217, 217, 217, 0.21);">
+<form class="job_form" style="max-width: 700px;">
 
+<h2  class="fsign"> Let’s commence with a compelling heading</h2>
 
-    
+<div>
+    <p class="fsign head_jobform" style="margin-bottom: 10px;">Write a title for your job post</p>
+    <input class="jobform_search" type="text" placeholder="" style="background-color: rgba(217, 217, 217, 0);"><a class="jobform_btn"><img src="./asset/images/Group 2257.svg"/></a>
+    <p style="font-size: 16px; font-weight: 400;">Search for the skills you are looking for</p>    
+</div>
+<div>
+    <p class="fsign head_jobform" style="margin-bottom: 10px;">Write a title for your job post</p>
+    <input class="jobform_search" type="text" placeholder="" style="background-color: rgba(217, 217, 217, 0);"><a class="jobform_btn"><img src="./asset/images/Group 2257.svg"/></a>    
+</div>
+<div>
+<p class="fsign head_jobform">Estimate the range of your work</p></div>
+<div class="radio_option">
+    <p>How long will your work take?</p>
+    <a></a><input type="radio" id="duration" name="duration" value="Yes"checked>
+    <label for="html">1 - 3 months</label>
+    <input type="radio" id="duration" name="duration" value="No">
+    <label for="css">3 - 6 months</label>
+    <input type="radio" id="duration" name="duration" value="Yes">
+    <label for="html">6 months or more</label>
+    <input type="radio" id="duration" name="duration" value="No">
+    <label for="css">Others</label><br>
+</div>
+<div class="radio_option">
+    <p>What level of experience will need?</p>
+    <input type="radio" id="experience" name="experience" value="Yes"checked>
+    <label for="html">Entry</label>
+    <input type="radio" id="experience" name="experience" value="No">
+    <label for="css">Intermediate</label>
+    <input type="radio" id="experience" name="experience" value="Yes">
+    <label for="html">Expert</label><br>
+</div>
+<p class="fsign head_jobform">Tell us about your budget</p>
+<p style="font-size: 18px; font-weight: 400; margin-bottom: 10px;">This will help us match you to talent within your range.</p>
+<div class="jobform_flex">
+    <div style="padding-right: 30px;">
+    <label for="">From</label><br>
+    <textarea name="" id="" style="background-color: rgba(217, 217, 217, 0);"></textarea></div>
+    <div>
+        <label for="">To</label><br>
+        <textarea name="" id="" style="background-color: rgba(217, 217, 217, 0);"></textarea></div>
+</div>
+<div>
+    <label for="" class="fsign head_jobform">Job description</label><br>
+    <textarea name="" id="" style="width: 100%; height: 100px; background-color: rgba(217, 217, 217, 0);"></textarea>
+</div>
+</form>
+<div style="float: right;">
+    <a class="btn-signup" href="">Post this job</a>
+</div>
+<br><br>
+</div>
+</section> 
     
     <footer>
         <div class="footer">
@@ -114,6 +169,6 @@
         </div>
         <hr style="height:2px;border-width:0;background-color:rgba(156, 201, 135, 1); margin-bottom: 50px;"> <br>
     </footer>
-    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
