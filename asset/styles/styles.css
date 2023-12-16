@@ -38,14 +38,15 @@
     nav {
       display: flex;
       justify-content: space-between;
-      padding: 10px 20px;
+      align-items: center;
+      padding: 10px 10px;
       max-width: auto;
       border: 1px solid white;
       background-color: white;
       margin: 10px 0px;
     }
     .nav-logo ul{
-      margin-left: 20px;
+      margin-left: 10px;
       font-size: 20px;
       font-weight: 500;
     }
@@ -69,6 +70,10 @@
       font-weight: 400;
       border: none;
     }
+    .hd-img>img{
+      width: 70px;
+      height: 50px;
+     }
     .headsearch-img{
       margin-left: -50px;
       position: absolute;
@@ -186,7 +191,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 20px;
+    margin: 0px 10px;
     padding: 10px;
     padding-bottom: 10px;
     color: black;
@@ -204,10 +209,6 @@
   display: flex;
   justify-content: center;
   color: rgba(0, 0, 0, 1);
-  }
-  .pwd-img>img{
-    width: 100px;
-    height: 100px;
   }
   .reset-header{
 font-size: 24px;
@@ -635,9 +636,9 @@ footer{
     padding-left: 3px;
 }
 
-.footer__company>img{
-    width: 96px;
-    height: 96px;
+.footer__company>img, .pwd-img>img{
+    width: 100px;
+    height: 90px;
     padding-bottom: 20px;
 }
 
@@ -734,11 +735,6 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: center;
- }
- .hd-img>img{
-  margin-top: 0px;
-  width: 40px;
-  height: 40px;
  }
 
  .su-img{
@@ -1227,7 +1223,7 @@ padding-top: 20px;
 }
 .sett-body1{
   margin: 20px;
-  height:1400px;
+  height:1000px;
 }
 
 .tab{
@@ -1827,7 +1823,6 @@ nav{
   position: relative;
   padding: 10px 5px;
 }
-
 .nav-list {
   display: block;
   position: absolute;
@@ -1876,7 +1871,9 @@ nav{
     font-size: 16px;
     font-weight: 500;
   }
-
+  .footer-list{
+    margin-bottom: 20px;
+}
   
   */
 
@@ -1920,6 +1917,7 @@ nav{
     justify-content: center;
     font-size: 32px;
     font-weight: 500;
+    line-height: 36px;
    }
    .client-paragraph, feature__paragraph{
     float: none;
@@ -1929,7 +1927,7 @@ nav{
     padding-bottom: 20px;
    }
    .footer, .flex_home, .flex-discover,
-    .flex_recent, .headicon, .headicon1{
+    .flex_recent, .headicon, .headicon1, .nav_postjob>li{
     display: flex;
     flex-direction: column;
    }
@@ -1973,7 +1971,7 @@ nav{
       width: 50%;
     }
     .signup-pg1, .freelance-heading, .acct-box, 
-    .flex_cat, .nav_postjob>li{
+    .flex_cat{
       padding-left: 0px;
       padding-right: 0px;
       padding-bottom: 10px;
@@ -2086,13 +2084,18 @@ nav{
     }
     .abt-mission button, .btn-signup{
       margin-right: 2px;
+      margin-bottom: 10px;
     }
     .abt-heading,.t-head, .tos-head, h1, .banner__title, .reset-head,
      .writer-subheading, .blog-header, .blog-shift>h3, .c-head,
-     .chome_head, .hp-welcome{
+     .chome_head{
       font-size: 32px;
       font-weight: 500;
       line-height: 36px;
+    }
+    .hp-welcome{
+      font-size: 28px;
+      line-height: 30px;
     }
     .writer-intro{
       margin-top: 30px;
@@ -2116,7 +2119,7 @@ nav{
       margin-left: -35px;
     }
     .mess-body{
-      height:800px;
+      height:900px;
     }
 
     .search_btn{
@@ -2207,7 +2210,7 @@ nav{
      margin-bottom: 0px;
   }
   .input { 
-    width: 40px; 
+    width: 30px; 
     margin: 0 5px; 
     text-align: center; 
     font-size: 24px;
@@ -2261,9 +2264,10 @@ height: 18px;
   padding-right: 5px;
 }
 
-.review-box{
+.review-box, .hp-welcome, .nav_postjob>li{
   padding: 10px;
 }
+
 .hps-head, .job-para{
   margin-left: 20px;
 }
@@ -2288,10 +2292,13 @@ margin-bottom: -20px;
   font-size: 16px;
 }
 .messa-text{
-  margin-top: 450px;
+  margin-top: 550px;
 }
-.nav-logo ul,  .nav_postjob{
+.nav-logo ul{
   margin-left: 10px;
+}
+.nav_postjob{
+  padding-left: 20px;
 }
 #signup-frame2{
   padding-left: 5px;
@@ -2320,7 +2327,7 @@ margin-bottom: -20px;
     font-size: 14px;
   }
   .searchField{
-    width: 180px;
+    width: 160px;
     height: 40px;
     font-size: 12px;
     padding-left: 5px;
@@ -2351,5 +2358,28 @@ margin-bottom: -20px;
   }
   .nav-text{
     font-size: 12px;
+  }
+  .head-link>a{
+    margin-left: 5px;
+  }
+  .btn-signup{
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  .nav {
+    margin: 0px 5px;
+    padding: 5px;
+  } 
+  .sett-body1{
+    margin: 5px;
+    height:1500px;
+  }
+  .profile-info{
+    padding: 0px 10px;
+  }
+  .profile_header{
+    padding: 5px;
+    width: auto;
   }
 }
