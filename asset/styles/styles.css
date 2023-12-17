@@ -34,17 +34,20 @@
     .bg-color{
       background-color: rgba(235, 242, 247, 1);
     }
-
+    .navbar{
+        width: 100%;
+        z-index: 1000;
+      }
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 10px;
+      padding: 0px 5px;
       max-width: auto;
       border: 1px solid white;
       background-color: white;
-      margin: 10px 0px;
     }
+
     .nav-logo ul{
       margin-left: 10px;
       font-size: 20px;
@@ -87,7 +90,7 @@
       margin-left: 10px;
     }
     .headicon{
-      margin-left: 100px;
+      margin-left: 80px;
       margin-right: 50px;
     }
     .headicon1{
@@ -161,11 +164,16 @@
     margin-bottom: 0px;
   }
 
-  .head-link, .acct-spacing, .set-spacing, .mes-chat,
+  .acct-spacing, .set-spacing, .mes-chat, .subscribe_nav,
    .review-head, .mes-box, .job-rating, .section-cat, .flex-discover,
-   .flex_home, .flex_recent {
+   .flex_home, .flex_recent, .jobdet_box>div>span, .jobdet_box>div>div>span {
     display: flex;
     justify-content: space-between;
+  }
+  .head-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .head-link>a{
     margin-left: 10px;
@@ -279,7 +287,7 @@ margin-left: 10px;
     margin: 20px 0px;
   }
   
-  ul, .checkbox-frm, .job-head, .nav-logo, .flex_alljob{
+  ul, .checkbox-frm, .job-head, .nav-logo, .flex_alljob, .jobdet_link{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1045,7 +1053,7 @@ input[type="radio"] {
 }
 
 .abt-header{
-background-image: linear-gradient(rgba(10, 164, 25, 0.75), rgba(36, 80, 21, 0.94));
+background-image: linear-gradient(rgba(10, 164, 25, 0.75), rgba(36, 80, 21, 0.94))
 }
 .abt-heading{
   padding: 50px 0px;
@@ -1180,7 +1188,7 @@ color: rgba(217, 217, 217, 1); }
 .pop-para{
   line-height: 18px;
 }
-.blog-para, .job_form{
+.blog-para, .job_form, .jobdet_link{
   padding: 15px;
 }
 .blog-link1>div, .b-flex, .set-spacing{
@@ -1200,7 +1208,7 @@ padding-top: 20px;
   align-items: center;
   padding: 10px 10px;
 }
-.not-para, .not-header, .mbox-text{
+.not-para, .not-header, .mbox-text, .jobdet_link>p>span{
   font-size: 24px;
   font-weight: 400;
   line-height: 20px;
@@ -1300,7 +1308,8 @@ padding-top: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.set-body, .profile_header, .profile_header1, .hp-header{
+.set-body, .profile_header, .profile_header1, 
+.hp-header, .jobdet_head, .jobdet_box{
   background-color:  rgba(245, 245, 245, 1);
 }
 .not-search{
@@ -1398,7 +1407,7 @@ padding: 15px 0px;
   border-radius: 20px;
   width: auto;
 }
-.hp-header, .hp-section{
+.hp-header, .hp-section, .jobdet_box{
   border-radius: 20px;
   width: auto;
 }
@@ -1808,7 +1817,47 @@ height: 50px;
   font-size: 20px;
   font-weight: 500;
 }
-
+.flex_jobdetails{
+  width: 1000px;
+}
+.jobdet_head{
+padding: 20px;
+font-size: 16px;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+.jobdet_head>img{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  padding-right: 20px;
+}
+.jobdet_box>div{
+padding: 20px 50px;
+}
+.jobdet_box>div>div>span{
+  padding: 10px 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.subscribe_btn{
+  background-color: rgba(215, 191, 41, 1);
+  color: rgba(0, 0, 0, 1);
+  padding: 6px 10px;
+  line-height: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: -120px;
+  position: absolute;
+}
+.subscribe_input{
+width: 400px;
+height: 29px;
+border-radius: 10px;
+border: none;
+padding-left: 10px;
+}
 
 
 @media (min-width: 800px) {
@@ -1816,15 +1865,20 @@ height: 50px;
   display: none;
 }
 }
-
 @media (max-width: 800px){
 /* navbar */
+.navigation_bar{
+overflow: hidden;
+}
+
 nav{
   position: relative;
-  padding: 10px 5px;
+  padding: 0px 0px;
+  z-index: 1000;
 }
 .nav-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   background-color: white;
   right: -20px;
@@ -1832,8 +1886,8 @@ nav{
   width: 250px;
   transform: translateX(300px);
   transition: 0.6s;
-  z-index: 1;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  z-index: 1000;
 }
   .head_search, .head_search1{
     width: 230px;
@@ -1843,21 +1897,16 @@ nav{
     font-weight: 400;
     margin-bottom: 10px;
   }
-
   .active {
     transform: translateX(0);
   }
-
   .head-icon, .nav-search{
+    display: block;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  .headicon, .headicon1{
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-right: 20px;
-  }
+ 
   .headicon1 a{
     padding-bottom: 10px;
     padding-right: 10px;
@@ -1866,7 +1915,7 @@ nav{
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  .nav-logo ul{
+  .nav-logo ul, .jobdet_link>p>span{
     margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -1875,7 +1924,7 @@ nav{
     margin-bottom: 20px;
 }
   
-  */
+/* header */
 
   section{
     padding: 0px 10px;
@@ -1926,10 +1975,13 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
    }
-   .footer, .flex_home, .flex-discover,
+   .footer, .flex_home, .flex-discover,.subscribe_nav,
     .flex_recent, .headicon, .headicon1, .nav_postjob>li{
     display: flex;
     flex-direction: column;
+   }
+   .subscribe_nav{
+    margin-top: 10px;
    }
     #banner, .jobform_flex{
       display: flex;
@@ -1971,7 +2023,7 @@ nav{
       width: 50%;
     }
     .signup-pg1, .freelance-heading, .acct-box, 
-    .flex_cat{
+    .flex_cat, .jobdet_link>p{
       padding-left: 0px;
       padding-right: 0px;
       padding-bottom: 10px;
@@ -2057,7 +2109,7 @@ nav{
       width: auto;
     }
 
-    .free-image>img, .chome_img>img, .clome_para{
+    .free-image>img, .chome_img>img, .clome_para, .flex_jobdetails{
       width: 100%;
     }
     form{
@@ -2125,7 +2177,7 @@ nav{
     .search_btn{
       padding: 60px 0px;
     }
-    .head-link{
+    .head-link, .jobdet_head{
       display: flex;
       justify-content: space-between;
       width: auto;
@@ -2356,14 +2408,14 @@ margin-bottom: -20px;
     height: 40px;
     padding-left: 10px;
   }
-  .nav-text{
-    font-size: 12px;
+  .nav-text,  .dropdown, .dropdown-content a{
+    font-size: 14px;
   }
   .head-link>a{
     margin-left: 5px;
   }
   .btn-signup{
-    font-size: 13px;
+    font-size: 12px;
     padding: 5px 10px;
     margin-right: 10px;
   }
@@ -2382,4 +2434,25 @@ margin-bottom: -20px;
     padding: 5px;
     width: auto;
   }
+  .jobdet_head{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .jobdet_box>div{
+    padding: 10px;
+    }
+ .jobdet_box>div>div>span{
+      font-size: 12px;
+    }
+    .subscribe_btn{
+      padding: 6px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: -70px;
+    }
+    .subscribe_input{
+    width: 180px;
+    height: 29px;
+    }
+    
 }
